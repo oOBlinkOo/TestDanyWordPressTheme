@@ -81,7 +81,7 @@
 					 								<small>lorem ipsum dolor sit amet, consctur adisplcing elit</small>
 					 							</div>
 					 							<div class="col-sm-1">
-					 								<small>26/sept/199123122</small>
+					 								<small>26/sept/1991</small>
 					 							</div>
 					 					</div>
 									
