@@ -29,9 +29,15 @@
 html {
 	font-size:62.5%;
 }
+
 body {
 	font:300 11px/1.4 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	color:#444;
+}
+.footer_bg{
+	background-color: #DDD; 
+	background-image:url(/img/bkg_foot.png) ;
+	 background-repeat: no-repeat;
 }
 /* clear */
 .clear:before,
@@ -88,13 +94,24 @@ input:focus {
 /*background-color: #FF0000;*/
 	height:50px;
     width:100%;
- 	background:red;
+ 	background:#FC4242;
 }
+.footer_bg{
+	/*background-color: #DDD; */
+	/*background-image:url(/img/logo3.png) ;*/
+	background-image:url(img/bkg_foot.png) ;
+	
+	 background-repeat: no-repeat;
+	 /*background:#FC4242;*/
+}
+
 .bannerbot{
 /*background-color: #FF0000;*/
 	height:50px;
     width:100%;
- 	background:orange;
+	background:#FF7300;
+	/*background-image:url(img/logo3.png) ;*/
+
 }
 /*noooo*/
 .caja {

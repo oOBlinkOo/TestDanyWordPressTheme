@@ -31,8 +31,8 @@
 			<!-- header -->
 			<header class="header clear" role="banner">
 					<!-- BannerTOP -->
-
-					<div class="bannertop">
+					<div class="container">
+						<div class="bannertop">
 					<br>
 						<div class="row">
 							<div class="col-sm-1"> </div>
@@ -43,6 +43,9 @@
 							<div class="col-sm-1">logo face</div>
 						</div>
 					</div>
+						
+					</div>
+					
 					<!-- logo -->
 				
 					<!-- /logo -->
@@ -57,14 +60,14 @@
 								<div class="col-sm-3"> 
 									<div class="logo">
 									  <a href="<?php echo home_url(); ?>">
-									  <img src="<?php echo get_template_directory_uri(); ?>/img/logo2.png" alt="Logo" class="logo-img">
+									  <img src="<?php echo get_template_directory_uri(); ?>/img/logo3.png" alt="Logo" class="logo-img">
 									  </a>
 									</div>
 								</div>
 								<div class="col-sm-7"> 
 										<div class="row">
 											<nav class="navbar navbar-default">
-												<div class="container">
+												
 													<div class="navbar-header">
 														<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
 															<span class="sr-only">Toggle navigation</span>
@@ -76,12 +79,12 @@
 													 <div id="navbar" class="navbar-collapse collapse">
 														<?php html5blank_nav(); ?>
 													</div><!--/.nav-collapse -->
-												</div>
+												
 											</nav>
 										</div>
 										<div class="row">
 											  <nav class="navbar navbar-default">
-										            <div class="container">
+										           
 										              <div class="navbar-header">
 										                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar2" aria-expanded="false" aria-controls="navbar">
 										                  <span class="sr-only">Toggle navigation</span>
@@ -93,7 +96,7 @@
 										               <div id="navbar2" class="navbar-collapse collapse">
 										                <?php html5blank_nav2(); ?>
 										              </div><!--/.nav-collapse -->
-										            </div>
+										          
 										          </nav>
 										</div>
 										
