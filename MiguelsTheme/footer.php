@@ -1,18 +1,21 @@
 			<!-- footer -->
-			<footer class="footer" role="contentinfo" >
+			<footer class="footer_bg" role="contentinfo" >
 
 		
 					 <div class="container">
 					 		<div class="row">
-						 		<div class="col-sm-4"> 
+						 		<div class="col-md-3"> 
 						 			<a href="<?php echo home_url(); ?>">
-									  <img src="<?php echo get_template_directory_uri(); ?>/img/logo2.png" alt="Logo" class="logo-img">
+									  <img src="<?php echo get_template_directory_uri(); ?>/img/logo3.png" alt="Logo" class="logo-img">
 									  </a>
 						 		</div>
-								<div class="col-sm-2">Radio Alarma</div>
-								<div class="col-sm-2">Paquetes</div>
-								<div class="col-sm-4">Artigulos de interes</div>
+						 		
+								<div class="col-md-2" >Radio Alarma</div>
+								<div class="col-md-2">Paquetes</div>
+								<div class="col-md-4">Artigulos de interes</div>
 					 		</div><!-- row -->
+
+
 					 		<div class="row">
 					 			<div class="col-sm-4">
 					 				<div class="row">
@@ -64,7 +67,7 @@
 					 			<div class="col-sm-4">
 					 					<div class="row">
 					 						<div class="col-sm-6">
-					 								<img src="<?php echo get_template_directory_uri(); ?>/img/logo2.png" alt="imag1" class="img-rounded">
+					 								<img src="<?php echo get_template_directory_uri(); ?>/img/logo3.png" alt="imag1" class="img-rounded">
 					 						</div>
 					 						<div class="col-sm-6">
 					 								<small>lorem ipsum dolor sit amet, consctur adisplcing elit</small>
@@ -75,7 +78,7 @@
 					 					</div>
 					 					<div class="row">
 					 							<div class="col-sm-6">
-					 									<img src="<?php echo get_template_directory_uri(); ?>/img/logo2.png" alt="imag1" class="img-rounded">
+					 									<img src="<?php echo get_template_directory_uri(); ?>/img/logo3.png" alt="imag1" class="img-rounded">
 					 							</div>
 					 							<div class="col-sm-6">
 					 								<small>lorem ipsum dolor sit amet, consctur adisplcing elit</small>
