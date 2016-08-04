@@ -146,7 +146,7 @@ function html5blank_nav2()
         'depth'             => 2,
         'container'         => 'div',
         'container_class'   => 'navbar-collapse collapse',
-        'container_id'      => 'bs-example-navbar-collapse-1',
+        'container_id'      => 'bs-example-navbar-collapse-2',
         'menu_class'        => 'nav navbar-nav',
         'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
         'walker'            => new wp_bootstrap_navwalker()
