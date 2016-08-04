@@ -29,9 +29,10 @@
 		<div class="wrapper">
 
 			<!-- header -->
-			<header class="header clear" role="banner">
+			<!-- <header class="header" role="banner"> -->
+			<header class="header" role="banner">
 					<!-- BannerTOP -->
-					<div class="container">
+		
 						<div class="bannertop">
 					<br>
 						<div class="row">
@@ -43,8 +44,8 @@
 							<div class="col-sm-1">logo face</div>
 						</div>
 					</div>
-						
-					</div>
+
+					
 					
 					<!-- logo -->
 				

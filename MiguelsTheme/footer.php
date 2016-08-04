@@ -4,15 +4,15 @@
 		
 					 <div class="container">
 					 		<div class="row">
-						 		<div class="col-md-3"> 
+						 		<div class="col-sm-3"> 
 						 			<a href="<?php echo home_url(); ?>">
 									  <img src="<?php echo get_template_directory_uri(); ?>/img/logo3.png" alt="Logo" class="logo-img">
 									  </a>
 						 		</div>
 						 		
-								<div class="col-md-2" >Radio Alarma</div>
-								<div class="col-md-2">Paquetes</div>
-								<div class="col-md-4">Artigulos de interes</div>
+								<div class="col-sm-2m" ><b>Radio Alarma</b></div>
+								<div class="col-sm-2m"><b>Paquetes</b></div>
+								<div class="col-sm-2m"><b>Artigulos de interes</b></div>
 					 		</div><!-- row -->
 
 
@@ -103,8 +103,9 @@
 							<div class="col-sm-4"> </div>
 							<div class="col-sm-4">Aviso de Privacidad </div>
 							<div class="col-sm-4">Copyright 2014 Radio Alarmas</div>
-
-							
+							<i class="fa fa-camera-retro fa-lg"></i> fa-lg
+							<i class="fa fa-camera-retro fa-lg"></i> fa-lg
+							<i class="fa fa-facebook-official" aria-hidden="true"></i>
 						</div>
 					</div>
 

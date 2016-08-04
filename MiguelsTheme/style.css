@@ -81,14 +81,25 @@ input:focus {
 
 /* wrapper */
 .wrapper {
-	max-width:1280px;
-	width:95%;
+	max-width:100%;
+	width:100%;
 	margin:0 auto;
 	position:relative;
 }
 /* header */
+.col-sm-2m {
+    width: 16.66666667%;
+    margin: 1cm;
+        float: left;
+     position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    /*col-sm-2m"*/
+}
 .header {
-
+max-width:100%;
+	width:100%;
 }
 .bannertop{
 /*background-color: #FF0000;*/
@@ -119,14 +130,14 @@ input:focus {
 	height: 25px;
 	border: 1px solid #C0C0C0;
 }
-#texto-uno {
+/*#texto-uno {
 	float: left;
 	line-height: 25px;
 }
 #texto-dos {
 	float: right;
 	line-height: 25px;
-}
+}*/
 /*nooo*/
 /* logo */
 .logo {
