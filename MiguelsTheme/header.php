@@ -34,14 +34,14 @@
 					<!-- BannerTOP -->
 		
 						<div class="bannertop">
-					<br>
+				
 						<div class="row">
-							<div class="col-sm-1"> </div>
-							<div class="col-sm-2">ventas@radioalarmas.com.mx</div>
+							<div class="col-sm-1m"> </div>
+							<div class="col-sm-3m"><i class="fa fa-envelope" aria-hidden="true"></i> ventas@radioalarmas.com.mx</div>
 							<div class="col-sm-2">direccion@radioalarmas.com.mx</div>
-							<div class="col-sm-3">ventas@radioalarmas@hotmail.com</div>
-							<div class="col-sm-3">(999) 981-40-85 y 981-40-86</div>
-							<div class="col-sm-1">logo face</div>
+							<div class="col-sm-3m">ventas@radioalarmas@hotmail.com</div>
+							<div class="col-sm-3m"><i class="fa fa-phone-square fa-1x" aria-hidden="true"></i>(999) 981-40-85 y 981-40-86</div>
+							<div><i class="fa fa-facebook fa-1x" aria-hidden="true"></i></div>
 						</div>
 					</div>
 

@@ -100,12 +100,13 @@
 					<div class="bannerbot">
 					<br>
 						<div class="row">
-							<div class="col-sm-4"> </div>
+							<div class="col-sm-3"> </div>
 							<div class="col-sm-4">Aviso de Privacidad </div>
-							<div class="col-sm-4">Copyright 2014 Radio Alarmas</div>
-							<i class="fa fa-camera-retro fa-lg"></i> fa-lg
-							<i class="fa fa-camera-retro fa-lg"></i> fa-lg
-							<i class="fa fa-facebook-official" aria-hidden="true"></i>
+							<div class="col-sm-3">Copyright 2014 Radio Alarmas </div>
+							<div ><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i> </div>
+
+							
+							
 						</div>
 					</div>
 
