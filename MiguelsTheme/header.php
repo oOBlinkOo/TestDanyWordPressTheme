@@ -37,6 +37,7 @@
 				
 						<div class="row">
 							<div class="col-sm-1m"> </div>
+						<!-- 	<p>aver</p> -->
 							<div class="col-sm-3m"><i class="fa fa-envelope" aria-hidden="true"></i> ventas@radioalarmas.com.mx</div>
 							<div class="col-sm-2">direccion@radioalarmas.com.mx</div>
 							<div class="col-sm-3m">ventas@radioalarmas@hotmail.com</div>

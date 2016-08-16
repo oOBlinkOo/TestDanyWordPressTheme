@@ -120,9 +120,10 @@ max-width:100%;
 }
 .bannertop{
 /*background-color: #FF0000;*/
-	height:40px;
+	/*height:40px;*/
     width:100%;
  	background:#FC4242;
+ 	min-height: 40px;
  	
 
 }
@@ -137,7 +138,7 @@ max-width:100%;
 
 .bannerbot{
 /*background-color: #FF0000;*/
-	height:40px;
+	min-height:40px;
     width:100%;
 	background:#FF7300;
 
