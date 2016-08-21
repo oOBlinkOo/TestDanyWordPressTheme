@@ -241,6 +241,18 @@ body {
 .clear {
     *zoom:1;
 }
+.mytest2 {
+    text-align: center;
+       font: 150% sans-serif;
+        font-weight: 700;
+}
+.mytest {
+    text-align: center;
+}
+.colorcontacto {
+    background: #8C9899;
+      font: 100% sans-serif;
+}
 .divScroll
  {
  	/*padding: 10px 15px;*/
