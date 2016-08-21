@@ -34,6 +34,195 @@ body {
 	font:300 11px/1.4 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	color:#444;
 }
+.top_grid{
+	background: #ececec;
+	/*background: red;*/
+	padding: 2%;
+}
+/*copy*/
+.pricing2{
+	margin:2% 0;
+	text-align:center;
+}
+.pricing2 img{
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-o-border-radius: 10px;
+
+}
+.pricing2 h5 {
+	text-transform: uppercase;
+	color: #62A09D;
+	font-size: 34px;
+	margin-bottom: 2%;
+	font-weight: 600;
+}
+.pricing2  h6 {
+	font-size: 16px;
+	color: #888888;
+	line-height: 1.8em;
+	margin: 0;
+}
+.pricing_table {
+	line-height:180%;
+	margin: 1% 9% 1% 9%;
+	width: 100%;
+}
+.price_block {
+	cursor:pointer;
+	padding-left:2%;
+	text-align: center;
+	width: 28% !important;
+	color: #fff;
+	float: left;
+	list-style-type: none;
+	position: relative;
+	box-sizing: border-box;
+	border-bottom: 1px solid transparent;
+	transition: 0.3s all;
+	-webkit-transition: 0.3s all;
+	-moz-transition: 0.3s all;
+	-o-transition: 0.3s all;
+}
+
+/*Price heads*/ /* Promocion*/
+.pricing_table h3 {
+	font-size: 20px;
+	text-transform: uppercase;
+	padding: 15px 0;
+	/*background: #333;*/
+	margin: -10px 0 1px 0;
+	border-radius: 10px 10px 0 0;
+	-webkit-border-radius: 10px 10px 0 0;
+	-moz-border-radius: 10px 10px 0 0;
+	-o-border-radius: 10px 10px 0 0;
+}
+.pricing_table .primero{
+	font-size: 20px;
+	text-transform: uppercase;
+	padding: 15px 0;
+	background: #20d0c0;
+	margin: -10px 0 0px 0;
+}
+.pricing_table .segundo{
+	font-size: 20px;
+	text-transform: uppercase;
+	padding: 15px 0;
+	background: #00c7e1;
+	margin: -10px 0 0px 0;
+}
+.pricing_table .tercero{
+	font-size: 20px;
+	text-transform: uppercase;
+	padding: 15px 0;
+	background: #ff526c;
+	margin: -10px 0 0px 0;
+}
+
+/*Price tags*/
+/*Esto es lo que muestra el precio 5004*/
+.price1 {
+	background: #31dbca;
+	display: table; 
+	width: 100%; 
+	height: 80px; 
+}
+.price2 {
+	background: #00d0eb;
+	display: table; 
+	width: 100%; 
+	height: 80px; 
+}
+.price3 {
+	background: #ff637a;
+	display: table; 
+	width: 100%; 
+	height: 80px; 
+}
+/*Esto es lo que muestra el precio 5004*/
+.price_figure {
+	font-size: 24px; 
+	text-transform: uppercase; 
+	vertical-align: middle; 
+	display: table-cell;
+}
+.price_number {
+	font-size: 1.5em;
+	display: block;
+	margin-bottom: 5px;
+}
+/*.price_tenure {
+	font-size: 12px; 
+}*/
+/*ala parte de abajo de los botones*/
+.pricing_btn1 {
+	padding: 15px;
+	background:  #31dbca;
+	border-radius:0 0 10px 10px;
+	-webkit-border-radius: 0 0 10px 10px;
+	-moz-border-radius: 0 0 10px 10px;
+	-o-border-radius: 0 0 10px 10px;
+}
+.pricing_btn2 {
+	padding: 15px; 
+	background:  #00d0eb;
+	border-radius:0 0 10px 10px ;
+	-webkit-border-radius: 0 0 10px 10px;
+	-moz-border-radius: 0 0 10px 10px;
+	-o-border-radius: 0 0 10px 10px;
+}
+.pricing_btn3 {
+	padding: 15px; 
+	background: #ff637a;
+	border-radius:0 0 10px 10px ;
+	-webkit-border-radius: 0 0 10px 10px;
+	-moz-border-radius: 0 0 10px 10px;
+	-o-border-radius: 0 0 10px 10px;
+}
+/*el boton de abajo como seve lo de adentro*/
+.action_button1 {
+	text-decoration: none;
+	color: #fff;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-o-border-radius: 2px;
+	padding: 10px 30px;
+	font-size: 20px;
+	background: #31dbca;
+}
+.action_button2 {
+	text-decoration: none;
+	color: #fff;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-o-border-radius: 2px;
+	padding: 10px 30px;
+	font-size: 20px;
+	background: #00d0eb;
+}
+.action_button3 {
+	text-decoration: none;
+	color: #fff;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-o-border-radius: 2px;
+	padding: 10px 30px;
+	font-size: 20px;
+	background: #ff637a;
+}
+.features li {
+	padding: 10px 15px;
+	border-bottom: 1px solid #d8d8d8;
+	font-size: 13px;
+	list-style-type: none;
+	text-transform: uppercase;
+	color: rgb(99, 99, 99);
+}
+/**/
 .footer_bg{
 	background-color: #DDD; 
 	background-image:url(/img/bkg_foot.png) ;
@@ -52,6 +241,31 @@ body {
 .clear {
     *zoom:1;
 }
+.divScroll
+ {
+ 	/*padding: 10px 15px;*/
+ 	margin-left: 40px;
+            overflow:scroll;
+            height:585px;
+            width:400px;
+        }
+.divScrollimage
+{
+ 	/*padding: 10px 15px;*/
+ 	margin-right: 120px;
+ 	 	margin-left: 40px;
+            /*overflow:scroll;*/
+            height:585px;
+            width:400px;
+ }
+ .divScrollimagetop
+{
+ 	/*padding: 10px 15px;*/
+ 	margin-right: 120px;
+ 	 	margin-left: 100px;
+            /*overflow:scroll;*/
+        
+ }
 img {
 	max-width:100%;
 	vertical-align:bottom;
