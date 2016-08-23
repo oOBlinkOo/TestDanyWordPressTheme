@@ -6,7 +6,7 @@
 		<?php 
 		$image1 = get_field('foto1');
 		$image2 = get_field('foto2');	
-		$texto = the_post();	
+		// $texto = the_post();	
 
 		// $nombre1 = get_field('nombre1');
 		// $precio1 = get_field('precio1');	
@@ -28,11 +28,13 @@
 	<div class="row"> 
 	<div class="col-sm-6">
 		 <div class="divScroll">
-        Somos una empresa dedicada a  salvaguardar el patrimonio de sus clientes mediante sistemas inteligents .<br>
-        Nuestro Compromiso es proteger su recendia, comercio , indsitria o casa de vrano, ofreciendo productos y servicios de calidad.<br>
-        En radio Alarmas somos un grupo de gente comprometida con nuestra mision: 
-        Cuidar y protejer a nuestro sclientes, su familia y su patrimonio.
-       
+   
+       			<div class="col-sm-6"> 
+					<?php  while (have_posts()) : the_post(); ?>
+					<?php the_content(); ?>
+					<?php endwhile; ?>
+
+				</div>
 
     
 

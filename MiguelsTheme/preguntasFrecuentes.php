@@ -4,40 +4,72 @@
 		<!-- section -->
 		<section>
 	<script type="text/javascript">
-	function function() {
-    // document.getElementById("demo").innerHTML = myvar;
-    alert("I am an alert box!");
-	// document.getElementById("demo").innerHTML ="algo";
+	function prueba(myvar) {
+		console.log(myvar);
+    document.getElementById("demo").innerHTML = myvar;
+ 
+
+
+	
+
+
 	}
+	
+	function cargarvalue(){
+		var ul_id = document.getElementById('ul_id');
+		var lis = ul_id.getElementsByTagName('li');
+		document.getElementById("demo").innerHTML = lis[0].id;
+		  // this.lis.add('active');
+		// lis.addClass("active");
+		// var d = document.getElementById("div1");
+		lis[0].className += " active";
+
+
+
+
+	}
+
 	</script>
 
 <div class="container">
-  <h3>Vertical Pills</h3>
-  <div class="row">
-    <div class="col-md-9">
-      <p id="demo" >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    </div>
-    
- <div class="col-md-3">
-	<?php if( have_rows('PREGUNTAS') ): ?>
 
-						<ul class="nav nav-pills nav-stacked">
+  <div class="row">
+  	<h1>Preguntas Frecuentes</h1>
+  </div>
+  <div class="row">
+  		  
+  		  <div class="row">
+  		  	<h3>Respuesta</h3>
+  		  </div>	
+  		  <div class="row">
+  		  	<div class="col-md-9">
+      		<p id="demo" >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    		</div>
+    		<div class="col-md-3">
+			<?php if( have_rows('PREGUNTAS') ): ?>
+
+						<ul class="list-group" id="ul_id">
 
 						<?php while( have_rows('PREGUNTAS') ): the_row(); 
 						$pregunta = get_sub_field('pregunta');
 						$respuesta = get_sub_field('respuesta');
 						?>
-						<form>
-							<input type="button" value="Touch me" onclick="function()">
-						</form>
-						<li class=""  onclick="function()"><?php echo $pregunta; ?> <button onclick="function()">Click me</button></li>
+						
+						<li id="<?php echo $respuesta;?>" class="list-group-item list-group-item-success"  onclick="prueba('<?php echo $respuesta;?>')"><?php echo $pregunta; ?> </li>
 					
 					<?php endwhile; ?>
 
 					</ul>
-
+						<?php 
+							echo "<script>";
+							echo "cargarvalue('<?php echo $respuesta;?>');";
+							echo "</script>";
+						 ?>
 				<?php endif; ?>
-				</div><!-- /colmd3 -->
+		</div><!-- /colmd3 -->
+  		  	
+		  </div>
+    	
 					
 
 
