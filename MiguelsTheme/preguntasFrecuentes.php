@@ -4,15 +4,11 @@
 		<!-- section -->
 		<section>
 	<script type="text/javascript">
-	function prueba(myvar) {
+	function prueba(element, myvar) {
 		console.log(myvar);
-    document.getElementById("demo").innerHTML = myvar;
- 
-
-
-	
-
-
+		document.getElementById("demo").innerHTML = myvar;
+		jQuery('.lista-preguntas').removeClass('active');
+		jQuery(element).addClass('active');
 	}
 	
 	function cargarvalue(){
@@ -23,11 +19,8 @@
 		// lis.addClass("active");
 		// var d = document.getElementById("div1");
 		lis[0].className += " active";
-
-
-
-
 	}
+	
 
 	</script>
 
@@ -55,7 +48,7 @@
 						$respuesta = get_sub_field('respuesta');
 						?>
 						
-						<li id="<?php echo $respuesta;?>" class="list-group-item list-group-item-success"  onclick="prueba('<?php echo $respuesta;?>')"><?php echo $pregunta; ?> </li>
+						<li id="<?php echo $respuesta;?>" class="lista-preguntas list-group-item list-group-item-success" data-respuesta="<?php echo $respuesta;?>" onclick="prueba(this,'<?php echo $respuesta;?>')"><?php echo $pregunta; ?> </li>
 					
 					<?php endwhile; ?>
 

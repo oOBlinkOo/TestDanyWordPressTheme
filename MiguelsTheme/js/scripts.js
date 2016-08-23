@@ -1,10 +1,12 @@
 (function ($, root, undefined) {
 	
 	$(function () {
-		
-		'use strict';
-		
-		// DOM ready, take it away
+
+
+		$('.lista-preguntas').click(function(event){
+			console.log($(this).data('respuesta'));
+		});
+
 		
 	});
 	
