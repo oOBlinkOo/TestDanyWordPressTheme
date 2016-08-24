@@ -253,6 +253,47 @@ body {
     background: #8C9899;
       font: 100% sans-serif;
 }
+
+.divscrollproductos
+ {
+ 	/*padding: 10px 15px;*/
+ 	
+            /*overflow:scroll;*/
+            height:500px;
+            width:500px;
+            margin: 40px;
+            /*overflow: visible;*/
+            /*margin: 100px;*/
+            /*text-align: justify;*/
+        }
+
+.nombre{
+font-weight: bold;
+font-size: 100%;
+text-align: center;
+}
+.descripcion{
+	background-color: orange;
+	font-size: 80%;
+	text-align: justify;
+	height: 100%;
+	width:100%;
+}
+.productborder
+ {
+ 	border-style:groove;		
+ }
+.productalign
+ {
+ 	/*padding: 10px 15px;*/
+ 	/*margin-left: 40px;*/
+            /*overflow:scroll;*/
+           /* height:100%;
+            width:100%;
+            margin: 100px;*/
+            /*text-align: justify;*/
+        }
+        /*esto estaba bien*/
 .divScroll
  {
  	/*padding: 10px 15px;*/
