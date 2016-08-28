@@ -5,9 +5,17 @@
 <script type="text/javascript">
 	function changeimages(element , myvar) {
 	// alert ("pasa x la funcion"  + myvar);
+
 		jQuery('.listaCategorias').removeClass('active');
 		jQuery(element).addClass('active');
+		// jQuery('.productborder').hide();
 		
+		jQuery('.Teclados de Seguridad').hide();
+		alert(myvar);
+
+
+
+
 	}
 	
 	function cargarvalueInit(){
@@ -145,7 +153,7 @@
             		// echo "paso" + var_dump($categoria);
             	?>
 
-            	<div class="col-md-3 productborder">
+            	<div class="col-md-3 <?php echo "$categoria";?> productborder " >
             		<div class="col-md-6"><div class="row"><p class="nombre"> <?php echo "$nombre";?></p></div>
             			<div class="row"> <img src="<?php echo $image['url']; ?>" alt="Chania"></div>
             		</div>
