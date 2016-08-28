@@ -9,6 +9,9 @@
 				<ul>
         <?php 
         $arreglo =null;
+        $flag = false;
+ 
+        
         while( have_rows('producto') ): the_row(); 
           $u =0;
                 $categoria = get_sub_field('categoria');
@@ -19,16 +22,43 @@
                 // echo "paso" + var_dump($categoria);
               ?>
 			<?php 
+				$flag = false;
+			
 				if (!is_null($categoria)) {
 					# code...
 					if (is_null($arreglo)) {
-						$arreglo[0]=$categoria;
+
+						$arreglo[] = $categoria;
+						// var_dump($arreglo);
+						// echo "paso x aqui <br>";
+
 					}else{
-						for ($i=0; $i < count($arreglo); $i++) { 
-							if (strcmp($var1, $var2) !== 0){
-								$arreglo[i]=$categoria;
-							}
+					
+					for ($i=0; $i < count($arreglo); $i++) { 
+						# code...
+						// echo "1 $arreglo[$i] <br>";
+						// 	echo "2 $categoria<br>";
+						if($arreglo[$i] == $categoria){
+							$flag =false;
+							break;
+						}else {
+							$flag = true;
 						}
+					}
+					// echo "<p >end del for "  ;
+					// echo $flag; 
+					// var_dump($arreglo);
+					// echo "</p>"  ;
+
+					if($flag == true){
+						$arreglo[] = $categoria;	
+
+					}
+							// echo "<p >end del for "  ;
+							// var_dump($arreglo);
+							// 	echo "</p>"  ;
+
+
 					}
 
 				}
@@ -41,6 +71,24 @@
               </ul>
 
 			<?php endif; ?>	
+			<?php 
+					
+					echo "<ul>";
+					echo "<li>";
+				   			echo "All";
+				   		echo "</li>";
+				   for ($i=0; $i < count($arreglo); $i++) { 
+				   	# code...
+				   		echo "<li>";
+				   			echo "$arreglo[$i]";
+				   		echo "</li>";
+				   }
+				   
+
+				   echo "<ul>";
+
+
+			?>
 
 
 
