@@ -48,14 +48,17 @@
 						$respuesta = get_sub_field('respuesta');
 						?>
 						
-						<li id="<?php echo $respuesta;?>" class="lista-preguntas list-group-item list-group-item-success" data-respuesta="<?php echo $respuesta;?>" onclick="prueba(this,'<?php echo $respuesta;?>')"><?php echo $pregunta; ?> </li>
+						<li id="<?php echo $respuesta;?>" 
+						class="lista-preguntas list-group-item list-group-item-success" 
+						data-respuesta="<?php echo $respuesta;?>" 
+						onclick="prueba(this,'<?php echo $respuesta;?>')"><?php echo $pregunta; ?> </li>
 					
 					<?php endwhile; ?>
 
 					</ul>
 						<?php 
 							echo "<script>";
-							echo "cargarvalue('<?php echo $respuesta;?>');";
+							echo "cargarvalue();";
 							echo "</script>";
 						 ?>
 				<?php endif; ?>

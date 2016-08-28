@@ -2,6 +2,23 @@
 
 	<main role="main">
 		<!-- section -->
+<script type="text/javascript">
+	function changeimages(element , myvar) {
+	// alert ("pasa x la funcion"  + myvar);
+		jQuery('.listaCategorias').removeClass('active');
+		jQuery(element).addClass('active');
+		
+	}
+	
+	function cargarvalueInit(){
+		var ul_id = document.getElementById('ul_id');
+		var lis = ul_id.getElementsByTagName('li');
+		lis[0].className += " active";
+	}
+	
+
+	</script>
+
 		<section>
 <div class="container">
 	
@@ -71,24 +88,34 @@
               </ul>
 
 			<?php endif; ?>	
-			<?php 
-					
-					echo "<ul>";
-					echo "<li>";
-				   			echo "All";
-				   		echo "</li>";
+			<?php 	echo "<ul class='list-group' id='ul_id'>"; ?>
+				<li class="list-group-item list-group-item-success listaCategorias" onclick="changeimages(this,'ALL')" >
+				   		ALL
+				 </li>
+
+					<?php 
+
+
 				   for ($i=0; $i < count($arreglo); $i++) { 
 				   	# code...
-				   		echo "<li>";
-				   			echo "$arreglo[$i]";
-				   		echo "</li>";
+				   	?>
+				   	
+
+				   	<li class="list-group-item list-group-item-success listaCategorias" onclick="changeimages(this,'<?php echo $arreglo[$i]; ?>')">
+				   			<?php echo "$arreglo[$i]"; ?>
+				   	</li>
+				   	<?php	
 				   }
 				   
 
 				   echo "<ul>";
-
-
 			?>
+
+			<?php 
+				echo "<script>";
+				echo "cargarvalueInit();";
+				echo "</script>";
+			 ?>
 
 
 
