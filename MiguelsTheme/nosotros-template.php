@@ -53,17 +53,17 @@
 		<div id="myCarousel" class="carousel slide" >
 					<div class="carousel-inner" role="listbox">
 				    	<div class="item active">
-				     	 <img src="<?php echo $image1['url']; ?>" alt="Chania">
+				     	 <img src="<?php echo $image1['url']; ?>" alt="foto1">
 				      	<div class="carousel-caption">
-				        <h3>12345678</h3>
-				        <p>12345678</p>
+				        <!-- <h3>Name foto 1</h3> -->
+				        <!-- <p>Description foto 1</p> -->
 				      	</div>
     				</div>
     				<div class="item">
-				      <img src="<?php echo $image2['url']; ?>" alt="Chania">
+				      <img src="<?php echo $image2['url']; ?>" alt="foto2">
 				      <div class="carousel-caption">
-				        <h3>Chania</h3>
-				        <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+				        <!-- <h3>Name foto 2</h3> -->
+				        <!-- <p>Description foto 2</p> -->
 				      </div>
 				    </div>
 				     <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
