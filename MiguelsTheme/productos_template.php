@@ -10,8 +10,13 @@
 		jQuery(element).addClass('active');
 		// jQuery('.productborder').hide();
 		
-		jQuery('.Teclados de Seguridad').hide();
-		alert(myvar);
+		if(myvar=='ALL')		
+			jQuery('.productborder').show()
+		else
+		{
+			jQuery('.productborder').hide()
+			jQuery('.'+myvar).show();
+		}
 
 
 
@@ -109,7 +114,7 @@
 				   	?>
 				   	
 
-				   	<li class="list-group-item list-group-item-success listaCategorias" onclick="changeimages(this,'<?php echo $arreglo[$i]; ?>')">
+				   	<li class="list-group-item list-group-item-success listaCategorias" onclick="changeimages(this,'<?php echo "data-".str_replace(" ","-",$arreglo[$i]); ?>')">
 				   			<?php echo "$arreglo[$i]"; ?>
 				   	</li>
 				   	<?php	
@@ -153,7 +158,7 @@
             		// echo "paso" + var_dump($categoria);
             	?>
 
-            	<div class="col-md-3 <?php echo "$categoria";?> productborder " >
+            	<div class="col-md-3 data-<?php echo str_replace(' ','-',$categoria);?> productborder " >
             		<div class="col-md-6"><div class="row"><p class="nombre"> <?php echo "$nombre";?></p></div>
             			<div class="row"> <img src="<?php echo $image['url']; ?>" alt="Chania"></div>
             		</div>
