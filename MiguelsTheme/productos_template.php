@@ -101,6 +101,10 @@
               </ul>
 
 			<?php endif; ?>	
+			<div class="col-xs-6 col-md-3">
+				
+
+			
 			<?php 	echo "<ul class='list-group' id='ul_id'>"; ?>
 				<li class="list-group-item list-group-item-success listaCategorias" onclick="changeimages(this,'ALL')" >
 				   		ALL
@@ -123,6 +127,7 @@
 
 				   echo "<ul>";
 			?>
+			</div>
 
 			<?php 
 				echo "<script>";
@@ -145,7 +150,7 @@
 
 		<div class="container">
 			
-<div class="row">
+<div class="row divscrollproductos">
 
 
 			<?php if( have_rows('producto') ): ?>
@@ -157,13 +162,14 @@
 		            $precio = get_sub_field('precio');
             		// echo "paso" + var_dump($categoria);
             	?>
-
-            	<div class="col-md-3 data-<?php echo str_replace(' ','-',$categoria);?> productborder " >
-            		<div class="col-md-6"><div class="row"><p class="nombre"> <?php echo "$nombre";?></p></div>
+            	
+            	<div class="bg-warning col-xs-6 col-md-3 data-<?php echo str_replace(' ','-',$categoria);?> productborder " >
+            	<!-- <div class="thumbnail"> -->
+            		<div class="col-md-6 bg-success" ><div class="row"><p class="nombre"> <?php echo "$nombre";?></p></div>
             			<div class="row"> <img src="<?php echo $image['url']; ?>" alt="Chania"></div>
             		</div>
-            		<div class="col-md-6 descripcion"><p class=""> <?php echo "$description";?></p></div>
-
+            		<div class="col-md-6   descripcion"><p class=""> <?php echo "$description";?></p></div>
+            	<!-- </div> -->
 				</div>
 
 
