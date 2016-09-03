@@ -3,9 +3,8 @@
 	<main role="main">
 		<!-- section -->
 		<section>
-		<div class="container">
-
-							<?php 
+			<div class="container">
+						<?php 
 							$image1 = get_field('foto1');
 							$title =  get_field('Ponte en contacto con nosotros');
 							$correo1 = get_field('correo1');
@@ -17,18 +16,17 @@
 
 							?>
 
-
-			<div class="row">
-				<div class="col-sm-6 colorcontacto"> 
-					<div class="row">
-						<div class="col-sm-12 mytest2"><?php echo $title; ?> </div>
-						<div class="col-sm-12">
-					
-							<img src="<?php echo $image1['url']; ?>" alt="Chania">
+				<div class="row">
+					<div class="col-md-6 bg-warning"> 
+						<div class="row"><br></div>
+						<div class="row">
+								<div class="col-sm-12 mytest2"><?php echo $title; ?> </div>
+								<div class="col-sm-12">
+									<img src="<?php echo $image1['url']; ?>" alt="Chania">
+								</div>
 						</div>
-					</div>
-						<br>
-					<div class="row mytest">
+						<div class="row mytest">
+						<div class="row"><br></div>
 						<div class="row">
 						<div class="col-sm-6"><i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i></div>
 						<div class="col-sm-6">
@@ -60,18 +58,26 @@
 						</div>
 							
 						</div>
+						<div class="row"><br></div>
+						<!-- empty row to move columns -->
 						
+					<!-- rowtest -->
+					</div>
+					</div>
 
+					<div class="col-md-6"> 
+								<?php  while (have_posts()) : the_post(); ?>
+								<?php the_content(); ?>
+								<?php endwhile; ?>
 					</div>
 					
-				</div>
-				<div class="col-sm-6"> 
-					<?php  while (have_posts()) : the_post(); ?>
-					<?php the_content(); ?>
-					<?php endwhile; ?>
+
+
 
 				</div>
 
+
+			</div>
 
 
 

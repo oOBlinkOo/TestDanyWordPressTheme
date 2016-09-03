@@ -31,12 +31,14 @@
   </div>
   <div class="row">
   		  
-  		  <div class="row">
+  		  <div class="row"><div class="col-md-9">
   		  	<h3>Respuesta</h3>
+  		  </div>
+  		  	
   		  </div>	
   		  <div class="row">
   		  	<div class="col-md-9">
-      		<p id="demo" >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      		<p id="demo" class="bg-warning" >Text For Answer.</p>
     		</div>
     		<div class="col-md-3">
 			<?php if( have_rows('PREGUNTAS') ): ?>
