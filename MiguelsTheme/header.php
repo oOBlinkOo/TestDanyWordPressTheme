@@ -36,12 +36,21 @@
 						<div class="bannertop">
 				
 						<div class="row">
+						<?php
+							$correo1 = get_field('correo1');
+							$correo2 = get_field('correo2');
+							$correo3 = get_field('correo3');
+							$telefonos = get_field('telefonos');
+							$facebook = get_field('facebook');
+
+
+						  ?>
 							<div class="col-sm-1m"> </div>
 						<!-- 	<p>aver</p> -->
-							<div class="col-sm-3m"><i class="fa fa-envelope" aria-hidden="true"></i> ventas@radioalarmas.com.mx</div>
-							<div class="col-sm-2">direccion@radioalarmas.com.mx</div>
-							<div class="col-sm-3m">ventas@radioalarmas@hotmail.com</div>
-							<div class="col-sm-3m"><i class="fa fa-phone-square fa-1x" aria-hidden="true"></i>(999) 981-40-85 y 981-40-86</div>
+							<div class="col-sm-3m"><i class="fa fa-envelope" aria-hidden="true"></i> <?php echo $correo1; ?></div>
+							<div class="col-sm-2"><?php echo $correo2; ?></div>
+							<div class="col-sm-3m"><?php echo $correo3; ?></div>
+							<div class="col-sm-3m"><i class="fa fa-phone-square fa-1x" aria-hidden="true"></i><?php echo $telefonos; ?></div>
 							<div><i class="fa fa-facebook fa-1x" aria-hidden="true"></i></div>
 						</div>
 					</div>
