@@ -116,7 +116,7 @@
 ?>
 
 			<div class="col-xs-6 col-md-9">
-			<div  id="carousel-example-generic"class="carousel slide" data-ride="carousel">
+			<div  id="carousel-example-generic"class="carousel slide" data-interval="false">
 				<div class="row ">
 					 <div class="carousel-inner" role="listbox">
 					 	   <div class="item active">
@@ -129,7 +129,7 @@
 
 									</div>	
 									<div class="col-md-3">
-										 <img class="img-thumbnail" src="<?php echo $imgventa1['url']; ?>">
+										 <img height="200" width="200" class="img-thumbnail" src="<?php echo $imgventa1['url']; ?>">
 									</div>	
 					      </div>
 					         <div class="item">
@@ -166,6 +166,7 @@
 				  </a>
 			</div>
 			</div>
+			<br>
 <!-- 
   <div class="carousel-inner" role="listbox">
       <div class="item active">
@@ -252,9 +253,9 @@
             			<div class="bg-warning col-xs-6 col-md-3 data-<?php echo str_replace(' ','-',$categoria);?> productborder " >
             	<!-- <div class="thumbnail"> -->
             		<div class="col-md-6 bg-success" ><div class="row"><p class="nombre"> <?php echo "$nombre";?></p></div>
-            			<div class="row"> <img class="img-thumbnail productImage" src="<?php echo $image['url']; ?>" alt="Chania"></div>
+            			<div class="row"> <img height="100" width="100" class="img-thumbnail productImage" src="<?php echo $image['url']; ?>" alt="Chania"></div>
             		</div>
-            		<div class="col-md-6   descripcion"><p class=""> <?php echo "$description";?></p></div>
+            		<div class="col-md-6   descripcion"><p class="descripciontext"> <?php echo "$description";?></p></div>
             	<!-- </div> -->
             	<br>
 				</div>
