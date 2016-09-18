@@ -37,11 +37,11 @@
 				
 						<div class="row">
 						<?php
-							$correo1header = get_field('correo1header');
-							$correo2header = get_field('correo2header');
-							$correo3header = get_field('correo3header');
-							$telefonosheader = get_field('telefonosheader');
-							$facebookheader= get_field('facebookheader');
+							$correo1header = get_field('correo1header','option');
+							$correo2header = get_field('correo2header','option');
+							$correo3header = get_field('correo3header','option');
+							$telefonosheader = get_field('telefonosheader','option');
+							$facebookheader= get_field('facebookheader','option');
 
 
 						  ?>
@@ -50,8 +50,10 @@
 							<div class="col-sm-3m"><i class="fa fa-envelope" aria-hidden="true"></i> <?php echo $correo1header; ?></div>
 							<div class="col-sm-2"><?php echo $correo2header; ?></div>
 							<div class="col-sm-3m"><?php echo $correo3header; ?></div>
-							<div class="col-sm-3m"><i class="fa fa-phone-square fa-1x" aria-hidden="true"></i><?php echo $telefonosheader; ?></div>
-							<div><i class="fa fa-facebook fa-1x" aria-hidden="true"></i></div>
+							<div class="col-sm-3m"><i class="fa fa-phone-square fa-1x" aria-hidden="true"></i> <?php echo $telefonosheader; ?></div>
+							<div>
+							<a href="<?php echo $facebookheader; ?>"> <i class="fa fa-facebook fa-1x" aria-hidden="true" href="www.facebook.com"></i></a>
+							</div>
 						</div>
 					</div>
 
