@@ -58,7 +58,7 @@
 						<p>Es este lugar puedes encontrar el asesor que necesitas, pincha el botón para más información</p>
 				</div>
 				<div class="col-md-2 span1_of_2">
-					<a class="btn btn-danger" href="Contacto.php">Solicitalo Aquí...</a>
+					<a class="btn btn-danger" href="<?php echo home_url(); ?>/contacto">Solicitalo Aquí...</a>
 				</div>
 				<div class="clearfix"></div>
 </div>
@@ -81,7 +81,7 @@
                 				<li style="height:100px;"><?php echo $descripcion1;?> : <?php echo $precio1;?></li>
 			</ul>
 			<div class="pricing_btn1">
-				<a href="http://radioalarma.com.mx/Productos.php?IdPromocion=1" class="action_button1 popup-with-zoom-anim">Conóce más</a>
+				<a href="<?php echo home_url(); ?>" class="action_button1 popup-with-zoom-anim">Conóce más</a>
 			</div>
 		</li>
 				
@@ -98,7 +98,7 @@
                 				<li style="height:100px;"><?php echo $descripcion2;?> : <?php echo $precio2;?></li>
 			</ul>
 			<div class="pricing_btn2">
-				<a href="http://radioalarma.com.mx/Productos.php?IdPromocion=7" class="action_button2 popup-with-zoom-anim">Conóce más</a>
+				<a href="<?php echo home_url(); ?>" class="action_button2 popup-with-zoom-anim">Conóce más</a>
 			</div>
 		</li>
 				
@@ -115,7 +115,7 @@
                 				<li style="height:100px;"><?php echo $descripcion3;?> : <?php echo $precio3;?></li>
 			</ul>
 			<div class="pricing_btn3">
-				<a href="http://radioalarma.com.mx/Productos.php?IdPromocion=10" class="action_button3 popup-with-zoom-anim">Conóce más</a>
+				<a href="<?php echo home_url(); ?>" class="action_button3 popup-with-zoom-anim">Conóce más</a>
 			</div>
 		</li>
 				

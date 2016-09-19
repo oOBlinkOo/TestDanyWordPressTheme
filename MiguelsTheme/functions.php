@@ -551,5 +551,16 @@ if( function_exists('acf_add_options_page') ) {
     ));
 }
 
+if( function_exists('acf_add_options_page') ) {
+    
+    acf_add_options_page(array(
+        'page_title'    => 'Footer General Settings',
+        'menu_title'    => 'Footer Settings',
+        'menu_slug'     => 'Footer-general-settings',
+        'capability'    => 'edit_posts',
+        'redirect'      => false
+    ));
+}
+
 
 ?>
