@@ -40,17 +40,33 @@ if (function_exists('add_theme_support'))
     ));*/
 
     // Add Support for Custom Header - Uncomment below if you're going to use
-    /*add_theme_support('custom-header', array(
-	'default-image'			=> get_template_directory_uri() . '/img/headers/default.jpg',
-	'header-text'			=> false,
-	'default-text-color'		=> '000',
-	'width'				=> 1000,
-	'height'			=> 198,
-	'random-default'		=> false,
-	'wp-head-callback'		=> $wphead_cb,
-	'admin-head-callback'		=> $adminhead_cb,
-	'admin-preview-callback'	=> $adminpreview_cb
-    ));*/
+ //    add_theme_support('custom-header', array(
+	// 'default-image'			=> get_template_directory_uri() . '/img/headers/default.jpg',
+	// 'header-text'			=> false,
+	// 'default-text-color'		=> '000',
+	// 'width'				=> 1000,
+	// 'height'			=> 198,
+	// 'random-default'		=> false,
+	// 'wp-head-callback'		=> $wphead_cb,
+	// 'admin-head-callback'		=> $adminhead_cb,
+	// 'admin-preview-callback'	=> $adminpreview_cb
+ //    ));
+    
+    // add_theme_support( 'custom-logo', array(
+    // 'height'      => 100,
+    // 'width'       => 400,
+    // 'flex-height' => true,
+    // 'flex-width'  => true,
+    // 'header-text' => array( 'site-title', 'site-description' ),
+    // ) );
+
+    add_theme_support( 'custom-logo', array(
+    'height'      => 130,
+    'width'       => 130,
+    'flex-height' => true,
+    'flex-width'  => true,
+    'header-text' => array( 'site-title', 'site-description' ),
+) );
 
     // Enables post and comment RSS feed links to head
     add_theme_support('automatic-feed-links');

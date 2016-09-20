@@ -73,7 +73,13 @@
 								<div class="col-sm-3"> 
 									<div class="logo">
 									  <a href="<?php echo home_url(); ?>">
-									  <img src="<?php echo get_template_directory_uri(); ?>/img/logo3.png" alt="Logo" class="logo-img">
+									  <?php 
+									  $custom_logo_id = get_theme_mod( 'custom_logo' );
+										$image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
+										
+
+									   ?>
+									  <img width="200" height="130" src="<?php echo $image[0]; ?>" alt="Logo" class="logo-img">
 									  </a>
 									</div>
 								</div>
